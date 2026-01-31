@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Personal Tour Guide</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="light">
+
+  <!-- Theme Toggle -->
+  <div class="theme-toggle">
+    <span>🌙</span>
+    <input type="checkbox" id="toggleTheme">
+    <span>☀️</span>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Your AI-Powered Personal Tour Guide</h1>
+      <p>
+        Discover cities smarter. Get real-time guidance, personalized itineraries,
+        and hidden local experiences — powered by intelligent AI.
+      </p>
+
+      <div class="tech-tags">
+        <span>AI Travel Planner</span>
+        <span>Live Navigation</span>
+        <span>Smart Recommendations</span>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="phone">
+        <div class="screen">
+          <p class="ai-text">👋 Hi! Exploring nearby attractions for you...</p>
+          <div class="map"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Problem Section -->
+  <section class="problem">
+    <h2>Travel Should Feel Exciting — Not Exhausting</h2>
+    <p class="subtitle">
+      Most travelers struggle with the same problems before and during every trip.
+    </p>
+
+    <div class="problem-grid">
+      <div class="problem-card">
+        <span class="icon">😵</span>
+        <h3>Information Overload</h3>
+        <p>
+          Endless blogs, videos, and reviews — but no clear plan that fits your needs.
+        </p>
+      </div>
+        <div class="problem-card">
+        <span class="icon">🗣</span>
+        <h3>Language Barriers</h3>
+        <p>
+          Difficulty communicating with locals, signs, or transport systems.
+        </p>
+      </div>
+
+      <div class="problem-card">
+        <span class="icon">⏰</span>
+        <h3>Time Wasted Planning</h3>
+        <p>
+          Hours spent creating itineraries instead of enjoying the journey.
+        </p>
+      </div>
+         <div class="problem-card">
+        <span class="icon">📍</span>
+        <h3>Missing Hidden Gems</h3>
+        <p>
+          Tourist traps everywhere — while the best local spots remain undiscovered.
+        </p>
+      </div>
+    </div>
+  </section>
+   <!-- Solution Section -->
+  <section class="solution">
+    <h2>Meet Your Intelligent Travel Companion</h2>
+    <p class="subtitle">
+      Our AI understands your travel style and guides you like a local — in real time.
+    </p>
+
+    <div class="solution-grid">
+      <div class="solution-card">
+        <span class="icon">🧠</span>
+        <h3>Smart Itinerary Builder</h3>
+        <p>
+          Generates personalized travel plans based on your interests, time, and budget.
+        </p>
+      </div>
+
+      <div class="solution-card">
+        <span class="icon">📍</span>
+        <h3>Live Location Guidance</h3>
+        <p>
+          Detects nearby attractions and guides you as you explore — step by step.
+        </p>
+      </div>
+       <div class="solution-card">
+        <span class="icon">🗣</span>
+        <h3>Multilingual AI Assistant</h3>
+        <p>
+          Communicate effortlessly with locals and understand signs in any language.
+        </p>
+      </div>
+     
+          <div class="solution-card">
+        <span class="icon">✨</span>
+        <h3>Hidden Gems Discovery</h3>
+        <p>
+          Uncovers local favorites beyond tourist traps using real-world data.
+        </p>
+      </div>
+    </div>
+  </section>
+   <!-- How It Works Section -->
+  <section class="how">
+    <h2>How It Works</h2>
+    <p class="subtitle">
+      Three simple steps to transform how you travel.
+    </p>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <h3>Tell Us Your Plan</h3>
+        <p>
+            Enter your destination, travel dates, interests, and preferences.
+        </p>
+      </div>
+
+      <div class="connector"></div>
+
+      <div class="step">
+        <div class="step-number">2</div>
+        <h3>AI Builds Your Journey</h3>
+        <p>
+            Our AI creates a personalized itinerary and smart travel guidance.
+        </p>
+      </div>
+
+      <div class="connector"></div>
+
+      <div class="step">
+        <div class="step-number">3</div>
+        <h3>Explore in Real Time</h3>
+        <p>
+          Get live suggestions, directions, and insights as you move.
+        </p>
+      </div>
+    </div>
+  </section>
+     <!-- Interactive Demo Section -->
+  <section class="demo">
+    <h2>Experience the AI Tour Guide</h2>
+    <p class="subtitle">
+      A live preview of how our AI assists travelers in real time.
+    </p>
+
+    <div class="demo-container">
+       
+        <!-- AI Chat -->
+      <div class="chat-box">
+        <div class="chat-header">AI Tour Guide</div>
+        <div class="chat-body" id="chatBody">
+          <div class="message ai">
+            👋 Hi! You're near a historic area. Want to explore nearby attractions?
+          </div>
+        </div>
+        <div class="chat-input">
+          <input type="text" placeholder="Ask about nearby places..." disabled />
+        </div>
+      </div>
+
+      <!-- Map Preview -->
+      <div class="map-box">
+       <div class="map-header">Live Map Preview</div>
+        <div class="map">
+          <div class="pin pin1"></div>
+          <div class="pin pin2"></div>
+          <div class="pin pin3"></div>
+          </div>
+      </div>
+
+    </div>
+  </section>
+       <!-- Use Cases Section -->
+  <section class="use-cases">
+    <h2>Who Is This For?</h2>
+    <p class="subtitle">
+      Designed to support every type of traveler — from solo explorers to professionals.
+    </p>
+
+    <div class="cases-grid">
+      <div class="case-card">
+        <span class="icon">🎒</span>
+        <h3>Solo Travelers</h3>
+        <p>
+          Confidently explore new cities with real-time guidance and safety insights.
+        </p>
+      </div>
+
+       <div class="case-card">
+        <span class="icon">👨‍👩‍👧</span>
+        <h3>Families</h3>
+        <p>
+          Kid-friendly routes, attractions, and stress-free planning for everyone.
+        </p>
+      </div>
+         <div class="case-card">
+        <span class="icon">💼</span>
+        <h3>Business Travelers</h3>
+        <p>
+          Efficient schedules, quick navigation, and local recommendations between meetings.
+        </p>
+      </div>
+
+      <div class="case-card">
+        <span class="icon">🎓</span>
+        <h3>Students & Backpackers</h3>
+        <p>
+          Budget-friendly plans, local transport tips, and affordable hidden gems.
+        </p>
+      </div>
+    </div>
+  </section>  
+  <!-- Tech Stack & Trust Section -->
+  <section class="tech">
+    <h2>Built with Modern, Trusted Technology</h2>
+    <p class="subtitle">
+      Designed using scalable tools and best practices for performance, security, and reliability.
+    </p>
+
+    <div class="tech-grid">
+      <div class="tech-card">
+        <span class="icon">🧠</span>
+        <h3>AI & Intelligence</h3>
+        <p>OpenAI / LLMs for smart recommendations and conversational guidance.</p>
+      </div>
+
+       <div class="tech-card">
+        <span class="icon">🗺</span>
+        <h3>Maps & Location</h3>
+        <p>Google Maps API for real-time navigation and location awareness.</p>
+      </div>
+
+       <div class="tech-card">
+        <span class="icon">⚙️</span>
+        <h3>Backend & APIs</h3>
+        <p>Flask / Node.js for fast, scalable, and secure backend services.</p>
+      </div>
+
+       <div class="tech-card">
+        <span class="icon">🎨</span>
+        <h3>Frontend</h3>
+        <p>HTML, CSS, JavaScript for responsive, modern user experiences.</p>
+      </div>
+
+      <div class="tech-card">
+        <span class="icon">☁️</span>
+        <h3>Cloud & Hosting</h3>
+        <p>Cloud-based deployment for high availability and global access.</p>
+      </div>
+
+       <div class="tech-card">
+        <span class="icon">🔒</span>
+        <h3>Security & Privacy</h3>
+        <p>Encrypted data handling and privacy-first architecture.</p>
+      </div>
+    </div>
+
+    <div class="trust-bar">
+      <div class="trust-item">🔐 Secure by Design</div>
+      <div class="trust-item">📱 Mobile Friendly</div>
+      <div class="trust-item">⚡ Fast Performance</div>
+      <div class="trust-item">🌍 Scalable Globally</div>
+    </div>
+  </section>
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <h2>Loved by Travelers</h2>
+    <p class="subtitle">
+      Early users share how the AI Tour Guide improved their travel experience.
+    </p>
+
+    <div class="testimonial-container">
+      <div class="testimonial active">
+        <p class="quote">
+          “This AI guide saved us hours of planning and showed places we would’ve never found.”
+        </p>
+        <div class="author">
+          <span class="avatar">👩</span>
+          <div>
+            <h4>Ananya S.</h4>
+            <small>Solo Traveler</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial">
+        <p class="quote">
+          “The live suggestions and map guidance felt like having a local friend with us.”
+        </p>
+        <div class="author">
+          <span class="avatar">👨</span>
+          <div>
+            <h4>Rahul M.</h4>
+            <small>Family Trip</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial">
+        <p class="quote">
+          “Perfect for business travel — fast routes, smart timing, zero confusion.”
+        </p>
+        <div class="author">
+          <span class="avatar">👩‍💼</span>
+          <div>
+            <h4>Pooja K.</h4>
+            <small>Business Traveler</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="cta-box">
+      <h2>Your Next Trip Doesn’t Need Guesswork</h2>
+      <p class="cta-line">
+        Let AI understand your preferences, location, time, and mood —
+        and turn every journey into a smart, stress-free experience.
+      </p>
+
+      <div class="cta-highlight">
+        <span>🌍 Explore smarter</span>
+        <span>🧠 Decide faster</span>
+        <span>✨ Travel better</span>
+      </div>
+
+      <p class="cta-footnote">
+        Built for modern travelers. Designed for real-world journeys.
+      </p>
+    </div>
+  </section>
+   <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+
+      <div class="footer-brand">
+        <h3>AI Personal Tour Guide</h3>
+        <p>
+          An intelligent travel companion that adapts to your journey,
+          preferences, and real-world conditions.
+        </p>
+      </div>
+
+        <div class="footer-links">
+        <div>
+          <h4>Product</h4>
+          <ul>
+            <li>Overview</li>
+            <li>Use Cases</li>
+            <li>Demo</li>
+            <li>Technology</li>
+          </ul>
+        </div>
+          <div>
+          <h4>Company</h4>
+          <ul>
+            <li>About</li>
+            <li>Privacy</li>
+            <li>Security</li>
+            <li>Terms</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Built With</h4>
+          <ul>
+            <li>AI & ML</li>
+            <li>Maps API</li>
+            <li>Real-time Data</li>
+            <li>Cloud Backend</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 AI Personal Tour Guide</span>
+      <span>Designed & Built for Smart Travel</span>
+    </div>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
