@@ -1,3 +1,17 @@
+/* ===== THEME VARIABLES ===== */
+:root {
+  --bg: #0b1120;
+  --text: #e5e7eb;
+  --primary: #38bdf8;
+  --card: #111827;
+}
+
+.light {
+  --bg: #f8fafc;
+  --text: #0f172a;
+  --primary: #0284c7;
+  --card: #e2e8f0;
+}
 /* CSS RESET */
 * {
   margin: 0;
@@ -44,13 +58,90 @@ body {
 /* HERO SECTION */
 .hero {
   min-height: 100vh;
-  display: grid;
+  display: grid, flex;
+  justify-content: space-between;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   padding: 80px 10%;
   gap: 60px;
 }
 
+.hero-left {
+  max-width: 52px;
+}
+.hero-left h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+.hero-left span {
+  color: var(--primary);
+}
+
+.hero-left p {
+  margin: 20px 0;
+  opacity: 0.85;
+}
+
+
+/* ===== BUTTONS ===== */
+.hero-actions {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+.btn {
+  padding: 12px 26px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+}
+
+.primary {
+  background: var(--primary);
+  color: #fff;
+}
+.outline {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--primary);
+}
+
+/* ===== BADGES ===== */
+.badges span {
+  background: var(--card);
+  padding: 8px 14px;
+  border-radius: 20px;
+  margin-right: 10px;
+  font-size: 0.85rem;
+}
+/* ===== APP MOCKUP ===== */
+.app-mockup {
+  width: 260px;
+  height: 480px;
+  background: linear-gradient(145deg, #1f2937, #020617);
+  border-radius: 30px;
+  padding: 14px;
+  animation: float 4s ease-in-out infinite;
+}
+.app-screen {
+  background: var(--card);
+  height: 100%;
+  border-radius: 22px;
+  padding: 20px;
+}
+
+.app-screen h3 {
+  margin: 10px 0;
+  color: var(--primary);
+}
+/* ===== ANIMATION ===== */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+  100% { transform: translateY(0); }
+}
 /* TEXT */
 .hero-content h1 {
   font-size: 3.2rem;

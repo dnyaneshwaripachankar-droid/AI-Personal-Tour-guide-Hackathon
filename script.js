@@ -5,6 +5,9 @@ toggle.addEventListener("change", () => {
   document.body.classList.toggle("light");
 });
 
+themeBtn.textContent =
+    document.body.classList.contains("light") ? "🌞" : "🌙";
+
 
 const chatBody = document.getElementById("chatBody");
 
